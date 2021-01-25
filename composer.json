@@ -1,0 +1,21 @@
+{
+    "name": "omerfarukbicer0446/database",
+    "description": "Database import and export",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "http://github.com/omerfarukbicer0446/database",
+    "keywords": ["database","import","export"],
+    "version": "1.0",
+    "authors": [
+        {
+            "name": "omerfarukbicer0446",
+            "email": "omerfarukbicer0446@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Database\\": "src/"
+        }
+    },
+    "require": {}
+}
