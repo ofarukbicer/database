@@ -22,7 +22,7 @@ $db = new Database('host', 'dbname', 'dbuser', 'dbpass');
 $data = new Export($db);
 /* Üstünde Database sınıfını çalıştırdıkdan sonra hangi değikene atadıysanız onu bu sınıfın içine gönderin */
 
-$data->run("exports"); 
+$data->run("exports"); // Not: exports yerine ne yazarsanız ona göre klasör açar
 // Yedeklemeyi bilgisayarınıza indirmez, aşağıdakini kullanın indirmek için
 /* $data->run("exports", true); */
 ```
