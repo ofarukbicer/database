@@ -7,6 +7,8 @@
 3. Kurulum bitti :) 
 
 ## 📒 Kullanım
+
+Export:
 ```php
 <?php
 
@@ -25,6 +27,26 @@ $data = new Export($db);
 $data->run("exports"); // Not: exports yerine ne yazarsanız ona göre klasör açar
 // Yedeklemeyi bilgisayarınıza indirmez, aşağıdakini kullanın indirmek için
 /* $data->run("exports", true); */
+```
+
+Import:
+```php
+<?php
+
+require "vendor/autoload.php";
+
+/* Gerekli use'lar */
+use Database\Database;
+use Database\Import;
+
+$db = new Database('host', 'dbname', 'dbuser', 'dbpass');
+// Database işlemleri yapılır :)
+
+$import = new Import($db, 'exports/25-01-2021-05-46-1611542802-notebook.sql'); 
+// sql dosyasını seçiniz
+
+$import->run(); 
+// bu Import işlemini çalıştırır
 ```
 
 ## 💚 Özel Teşekkürler
