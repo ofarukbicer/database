@@ -3,7 +3,7 @@
 ## 📥 Kurulum
 
 1. Composer bilgisayarınızda kurulu olması lazımdır.
-2. Terminal'e `composer require omerfarukbicer0446/database` yazın.
+2. Terminal'e `composer require omerfarukbicer0446/database dev-main2` yazın.
 3. Kurulum bitti :) 
 
 ## 📒 Kullanım
